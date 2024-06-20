@@ -2,6 +2,7 @@ from hstest import StageTest, CheckResult, dynamic_test, TestedProgram
 import ast
 import os
 
+
 class Football(StageTest):
 
     @dynamic_test()

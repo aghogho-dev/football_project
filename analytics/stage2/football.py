@@ -63,11 +63,11 @@ GROUP BY
     team_name
 ORDER BY 
     draws DESC
-LIMIT 1;
+LIMIT 3;
 """
 
 df = pd.read_sql_query(query, conn)
 
 conn.close()
 
-print(*(df.head().values.tolist()))
+print(sorted(df.head().values.tolist()))
