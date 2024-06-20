@@ -93,7 +93,7 @@ for entry in teams:
     team, point, season = entry
     data_by_team[team][season] = point
 
-fig, ax = plt.subplots(figsize=(12, 6))
+fig, ax = plt.subplots(figsize=(12, 4))
 
 bar_width = 0.2
 index = range(len(unique_teams))
@@ -108,9 +108,9 @@ ax.set_title('Points by Teams across Different Seasons')
 ax.set_xticks([p + bar_width for p in index])
 ax.set_xticklabels(unique_teams)
 ax.yaxis.set_visible(False)
-ax.legend(title='Seasons')
+ax.legend(title='Seasons', loc="center")
 plt.xticks(rotation=0)
 
-# plt.show()
+plt.show()
 
 
