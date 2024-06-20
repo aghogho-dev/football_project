@@ -79,7 +79,7 @@ conn.close()
 
 teams = df.values.tolist()
 
-print(*teams)
+print(teams)
 
 team_names = [entry[0] for entry in teams]
 points = [entry[1] for entry in teams]
@@ -111,6 +111,6 @@ ax.yaxis.set_visible(False)
 ax.legend(title='Seasons')
 plt.xticks(rotation=0)
 
-plt.show()
+# plt.show()
 
 
